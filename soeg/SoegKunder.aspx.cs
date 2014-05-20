@@ -63,7 +63,7 @@ public partial class SoegKunder : System.Web.UI.Page
         }
 
         string whereCountries = "";
-        if (CheckBoxListCountries.SelectedIndex > 0)
+        if (CheckBoxListCountries.SelectedIndex >= 0)
         {
             int i = 1;
             foreach (ListItem country in CheckBoxListCountries.Items)
